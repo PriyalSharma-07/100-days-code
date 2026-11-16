@@ -7,8 +7,9 @@ struct Student {
 };
 
 void display(struct Student s) {
+    printf("\nStudent Details:\n");
     printf("Name: %s\n", s.name);
-    printf("Roll No: %d\n", s.roll_no);
+    printf("Roll Number: %d\n", s.roll_no);
     printf("Marks: %.2f\n", s.marks);
 }
 
@@ -16,7 +17,7 @@ int main() {
     struct Student s;
 
     printf("Enter name: ");
-    scanf("%49s", s.name);
+    scanf("%s", s.name);
 
     printf("Enter roll number: ");
     scanf("%d", &s.roll_no);
